@@ -1,72 +1,73 @@
 import 'package:flutter/material.dart';
+import 'package:payment_checkout/core/utils/colors.data.dart';
 
 abstract class Styles {
-  static const TextStyle textStyle25W500 = TextStyle(
-    color: Colors.black,
+  static TextStyle textStyle25W700 = TextStyle(
+    color: ColorsData.mainTextColor,
     fontSize: 25,
     fontFamily: 'Inter',
-    fontWeight: FontWeight.w500,
+    fontWeight: FontWeight.bold,
   );
 
-  static const TextStyle textStyle24W600 = TextStyle(
-    color: Colors.black,
+  static TextStyle textStyle24W700 = TextStyle(
+    color: ColorsData.mainTextColor,
     fontSize: 24,
     fontFamily: 'Inter',
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeight.bold,
   );
 
-  static const TextStyle textStyle22W500 = TextStyle(
-    color: Colors.black,
+  static TextStyle textStyle22W600 = TextStyle(
+    color: ColorsData.mainTextColor,
     fontSize: 22,
     fontFamily: 'Inter',
-    fontWeight: FontWeight.w500,
+    fontWeight: FontWeight.w600,
   );
 
-  static const TextStyle textStyle20W400 = TextStyle(
-    color: Colors.black,
+  static TextStyle textStyle20W500 = TextStyle(
+    color: ColorsData.mainTextColor,
     fontSize: 20,
     fontFamily: 'Inter',
-    fontWeight: FontWeight.w400,
+    fontWeight: FontWeight.w500,
   );
 
-  static TextStyle textStyle18W400 = TextStyle(
-    color: Colors.black.withOpacity(0.7),
+  static TextStyle textStyle18W500 = TextStyle(
+    color: ColorsData.mainTextColor.withOpacity(0.7),
     fontSize: 18,
-    fontFamily: 'Inter',
-    fontWeight: FontWeight.w400,
-  );
-
-  static const TextStyle textStyle18W600 = TextStyle(
-    color: Colors.black,
-    fontSize: 18,
-    fontFamily: 'Inter',
-    fontWeight: FontWeight.w600,
-  );
-
-  static TextStyle textStyle16W400 = TextStyle(
-    color: Colors.black.withOpacity(0.7),
-    fontSize: 16,
-    fontFamily: 'Inter',
-    fontWeight: FontWeight.w400,
-  );
-  static const TextStyle textStyle13W500 = TextStyle(
-    color: Colors.black,
-    fontSize: 13,
     fontFamily: 'Inter',
     fontWeight: FontWeight.w500,
   );
 
-  static const TextStyle textStyle13W600 = TextStyle(
-    color: Colors.black,
+  static TextStyle textStyle18W700 = TextStyle(
+    color: ColorsData.mainTextColor,
+    fontSize: 18,
+    fontFamily: 'Inter',
+    fontWeight: FontWeight.bold,
+  );
+
+  static TextStyle textStyle16W500 = TextStyle(
+    color: ColorsData.mainTextColor.withOpacity(0.7),
+    fontSize: 16,
+    fontFamily: 'Inter',
+    fontWeight: FontWeight.w500,
+  );
+  static TextStyle textStyle13W600 = TextStyle(
+    color: ColorsData.mainTextColor,
     fontSize: 13,
     fontFamily: 'Inter',
     fontWeight: FontWeight.w600,
   );
 
-  static TextStyle textStyle6W400 = TextStyle(
-    color: Colors.black.withOpacity(0.7),
+  static TextStyle textStyle13W700 = TextStyle(
+    color: ColorsData.mainTextColor,
+    fontSize: 13,
+    fontFamily: 'Inter',
+    fontWeight: FontWeight.bold,
+  );
+
+  static TextStyle textStyle6W500 = TextStyle(
+    color: ColorsData.mainTextColor.withOpacity(0.7),
     fontSize: 6,
     fontFamily: 'Inter',
-    fontWeight: FontWeight.w400,
+    fontWeight: FontWeight.w500,
   );
 }
