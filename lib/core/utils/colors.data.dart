@@ -5,4 +5,6 @@ abstract class ColorsData {
   static Color nonActiveColor = Colors.black.withOpacity(0.5);
   static Color mainTextColor = Colors.black;
   static Color buttonTextColor = Colors.white;
+  static Color backgroundColor = Colors.white;
+  static const Color receiptTicketBackgroundColor = Color(0xffD9D9D9);
 }
