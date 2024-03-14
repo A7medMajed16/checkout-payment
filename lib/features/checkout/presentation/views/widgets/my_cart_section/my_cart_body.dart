@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:payment_checkout/core/utils/app_routers.dart';
 import 'package:payment_checkout/core/utils/assets_data.dart';
 import 'package:payment_checkout/features/checkout/presentation/views/widgets/my_cart_section/cart_item_info.dart';
 import 'package:payment_checkout/features/checkout/presentation/views/widgets/checkout_button.dart';
-import 'package:payment_checkout/features/checkout/presentation/views/widgets/my_cart_section/total_cost.dart';
+import 'package:payment_checkout/features/checkout/presentation/views/widgets/my_cart_section/payment_methods_bottom_sheet.dart';
+import 'package:payment_checkout/features/checkout/presentation/views/widgets/total_cost.dart';
 
 class MyCartViewBody extends StatelessWidget {
   const MyCartViewBody({super.key});
@@ -46,10 +45,14 @@ class MyCartViewBody extends StatelessWidget {
             ),
             const SizedBox(height: 15),
             CheckoutButton(
-              text: 'Complete Payment',
-              onPressed: () =>
-                  GoRouter.of(context).push(AppRouter.kPaymentDetailsView),
-            ),
+                text: 'Complete Payment',
+                onPressed: () => showModalBottomSheet(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(16),
+                      ),
+                      context: context,
+                      builder: (context) => const PaymentMethodsBottomSheet(),
+                    )),
           ],
         ),
       ),

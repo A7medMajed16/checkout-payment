@@ -38,7 +38,7 @@ class PaymentMethodsCard extends StatelessWidget {
               borderRadius: BorderRadius.circular(15),
               color: Colors.white,
             ),
-      duration: const Duration(milliseconds: 300),
+      duration: const Duration(milliseconds: 200),
       child: Center(
         child: SvgPicture.asset(
           methodLogoPath,

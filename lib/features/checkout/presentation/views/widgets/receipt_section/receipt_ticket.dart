@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:payment_checkout/core/utils/colors.data.dart';
 import 'package:payment_checkout/features/checkout/presentation/views/widgets/receipt_section/checked_circle.dart';
 import 'package:payment_checkout/features/checkout/presentation/views/widgets/receipt_section/dashed_line.dart';
+import 'package:payment_checkout/features/checkout/presentation/views/widgets/receipt_section/receipt_ticket_body.dart';
 
 class ReceiptTicket extends StatelessWidget {
   const ReceiptTicket({
@@ -16,11 +17,8 @@ class ReceiptTicket extends StatelessWidget {
     return Stack(
       clipBehavior: Clip.none,
       children: [
-        Container(
-          decoration: BoxDecoration(
-            color: ColorsData.receiptTicketBackgroundColor,
-            borderRadius: BorderRadius.circular(20),
-          ),
+        ReceiptTicketBody(
+          hight: hight,
         ),
         Positioned(
             left: 20 + 10,
