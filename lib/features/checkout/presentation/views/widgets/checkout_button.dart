@@ -7,9 +7,11 @@ class CheckoutButton extends StatelessWidget {
     super.key,
     required this.text,
     this.onPressed,
+    this.isLoading = false,
   });
 
   final String text;
+  final bool isLoading;
 
   final void Function()? onPressed;
   @override
@@ -25,11 +27,17 @@ class CheckoutButton extends StatelessWidget {
             borderRadius: BorderRadius.circular(15),
           ),
         ),
-        child: Text(
-          text,
-          style: Styles.textStyle22W600
-              .copyWith(color: ColorsData.buttonTextColor),
-        ),
+        child: isLoading
+            ? const Center(
+                child: CircularProgressIndicator(
+                  color: Colors.white,
+                ),
+              )
+            : Text(
+                text,
+                style: Styles.textStyle22W600
+                    .copyWith(color: ColorsData.buttonTextColor),
+              ),
       ),
     );
   }

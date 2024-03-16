@@ -6,16 +6,19 @@ import 'package:payment_checkout/features/checkout/data/models/payment_intent_in
 import 'package:payment_checkout/features/checkout/data/models/payment_intent_model/payment_intent_model.dart';
 
 class StripeServices {
-  final ApiService apiService = ApiService(Dio());
+  final ApiService apiService = ApiService();
 
   Future<PaymentIntentModel> createPaymentIntent(
       PaymentIntentInputModel paymentIntentInputModel) async {
     var response = await apiService.post(
+      body: paymentIntentInputModel.toJson(),
+      contentType: Headers.formUrlEncodedContentType,
       endPoint: 'payment_intents',
-      body: paymentIntentInputModel.toJason(),
       token: ApiKeys.secretKey,
     );
+
     var paymentIntentModel = PaymentIntentModel.fromJson(response.data);
+
     return paymentIntentModel;
   }
 
@@ -35,8 +38,7 @@ class StripeServices {
 
   Future<void> makePayment(
       {required PaymentIntentInputModel paymentIntentInputModel}) async {
-    PaymentIntentModel paymentIntentModel =
-        await createPaymentIntent(paymentIntentInputModel);
+    var paymentIntentModel = await createPaymentIntent(paymentIntentInputModel);
     await initPaymentSheet(
         paymentIntentClientSecret: paymentIntentModel.clientSecret!);
     await displayPaymentSheet();
