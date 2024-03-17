@@ -24,7 +24,7 @@ class _PaymentMethodsListState extends State<PaymentMethodsList> {
       height: 62,
       child: ListView.separated(
         itemCount: methodsLogosPaths.length,
-        physics: const NeverScrollableScrollPhysics(),
+        physics: const BouncingScrollPhysics(),
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) => GestureDetector(
           onTap: () {

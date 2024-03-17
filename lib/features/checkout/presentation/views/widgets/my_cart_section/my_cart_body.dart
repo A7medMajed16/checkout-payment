@@ -60,6 +60,9 @@ class MyCartViewBody extends StatelessWidget {
                         child: const PaymentMethodsBottomSheet(),
                       ),
                     )),
+            const SizedBox(
+              height: 20,
+            )
           ],
         ),
       ),
