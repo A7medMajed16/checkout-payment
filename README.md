@@ -1,3 +1,5 @@
+
+https://github.com/A7medMajed16/checkout-payment/assets/86576698/9b84e4b6-16e5-4fa0-8834-e057dac0bce5
 # StripePayment Feature for Flutter Apps
 
 ## Overview
@@ -10,21 +12,35 @@ StripePayment is a feature that can be seamlessly integrated into any Flutter ap
    - Intuitive UI with smooth animations for adding/removing items.
    - Cart total dynamically updates as items are added or removed.
 
+     ![MyCart](https://github.com/A7medMajed16/checkout-payment/assets/86576698/c9791b9b-a17c-4f10-8ad0-2db8770d3dbc)
+
+
 2. ### Multiple Payment Methods:
    - Users can add and manage multiple payment methods (credit cards, bank accounts, etc.).
    - Securely store payment information for future use.
    - Easily switch between saved payment methods during checkout.
 
+   ![PaymentMethods](https://github.com/A7medMajed16/checkout-payment/assets/86576698/c37408fc-a035-4f3f-a4c4-51591421746f)
+
+     
 3. ### Payment Stripe Sheet:
    - A sleek and user-friendly payment sheet powered by Stripe.
    - Users can enter payment details (card number, expiry, CVV) directly.
    - Option to save payment information for future transactions.
 
+   
+   ![Stripe](https://github.com/A7medMajed16/checkout-payment/assets/86576698/4163d9ad-6bb8-4707-a017-4a81898d44fd)
+
+   
 4. ### Receipt Page:
    - After successful payment, users are presented with a detailed receipt.
    - Receipt includes order summary, payment details, and transaction ID.
    - Clean and professional design.
 
+   
+   ![Receipt](https://github.com/A7medMajed16/checkout-payment/assets/86576698/3c0f48b4-89d7-465e-8ef9-ac677c543313)
+
+   
 ## Technical Details
 - ### Architecture:
        MVVM (Model-View-ViewModel)
@@ -55,6 +71,11 @@ StripePayment is a feature that can be seamlessly integrated into any Flutter ap
 
 ## Showcase
 StripePayment has been successfully integrated into several e-commerce and service apps, improving checkout experiences and increasing user satisfaction.
+
+## Video
+
+   Uploading video_2024-03-17_07-23-01.mp4…
+
 
 
 ---
