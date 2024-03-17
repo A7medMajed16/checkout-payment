@@ -5,45 +5,45 @@ StripePayment is a feature that can be seamlessly integrated into any Flutter ap
 
 ## Key Features
 
-1. ###Nice and Smooth Cart Page:
+1. ### Nice and Smooth Cart Page:
    - Users can easily view and manage their cart items.
    - Intuitive UI with smooth animations for adding/removing items.
    - Cart total dynamically updates as items are added or removed.
 
-2. ###Multiple Payment Methods:
+2. ### Multiple Payment Methods:
    - Users can add and manage multiple payment methods (credit cards, bank accounts, etc.).
    - Securely store payment information for future use.
    - Easily switch between saved payment methods during checkout.
 
-3. ###Payment Stripe Sheet:
+3. ### Payment Stripe Sheet:
    - A sleek and user-friendly payment sheet powered by Stripe.
    - Users can enter payment details (card number, expiry, CVV) directly.
    - Option to save payment information for future transactions.
 
-4. ###Receipt Page:
+4. ### Receipt Page:
    - After successful payment, users are presented with a detailed receipt.
    - Receipt includes order summary, payment details, and transaction ID.
    - Clean and professional design.
 
 ## Technical Details
-- ###Architecture:
+- ### Architecture:
        MVVM (Model-View-ViewModel)
-- ###State Management:
+- ### State Management:
         Bloc
-- ###Error Handling:
+- ### Error Handling:
   - Comprehensive error handling for network issues, invalid inputs, and server errors.
   - User-friendly error messages and fallbacks.
-- ###Performance Optimization:
+- ### Performance Optimization:
   - Efficient data fetching and caching.
   - Minimized network requests.
   - Optimized animations for a smooth user experience.
-- ###Security:
+- ### Security:
   - Stripe integration follows best practices for secure payment processing.
   - Sensitive data (e.g., card details) encrypted and transmitted securely.
-- ###Testing:
+- ### Testing:
   - Unit tests for business logic.
   - Widget tests for UI components.
-- ###Documentation:
+- ### Documentation:
   - Detailed code comments.
   - README with setup instructions for other developers.
 
