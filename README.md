@@ -72,6 +72,21 @@ StripePayment is a feature that can be seamlessly integrated into any Flutter ap
 ## Showcase
 StripePayment has been successfully integrated into several e-commerce and service apps, improving checkout experiences and increasing user satisfaction.
 
+## Used Packages
+| **Package Name**       | **Version**    |
+|------------------------|----------------|
+| cupertino_icons        | ^1.0.6         |
+| dartz                  | ^0.10.1        |
+| dio                    | ^5.4.1         |
+| flutter                | sdk: flutter   |
+| flutter_bloc           | ^8.1.4         |
+| flutter_launcher_icons | ^0.13.1        |
+| flutter_stripe         | ^10.1.1        |
+| flutter_svg            | ^2.0.10+1      |
+| font_awesome_flutter   | ^10.7.0        |
+| go_router              | ^13.2.0        |
+
+
 ## Video
 
    Uploading video_2024-03-17_07-23-01.mp4…
