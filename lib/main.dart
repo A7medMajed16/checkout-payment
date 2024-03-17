@@ -19,3 +19,5 @@ class CheckoutApp extends StatelessWidget {
     );
   }
 }
+
+//customer_id = 'cus_Pkfw5L8o2Q1v3H'

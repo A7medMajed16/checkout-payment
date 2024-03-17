@@ -33,7 +33,11 @@ class CheckOutButtonConsumer extends StatelessWidget {
         return CheckoutButton(
           onPressed: () {
             PaymentIntentInputModel paymentIntentInputModel =
-                PaymentIntentInputModel(amount: '100', currency: 'usd');
+                PaymentIntentInputModel(
+              amount: '100',
+              currency: 'usd',
+              customerId: 'cus_Pkfw5L8o2Q1v3H',
+            );
             BlocProvider.of<StripePaymentCubit>(context)
                 .makePayment(paymentIntentInputModel: paymentIntentInputModel);
           },
