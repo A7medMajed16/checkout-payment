@@ -1,5 +1,5 @@
 
-https://github.com/A7medMajed16/checkout-payment/assets/86576698/9b84e4b6-16e5-4fa0-8834-e057dac0bce5
+
 # StripePayment Feature for Flutter Apps
 
 ## Overview
@@ -89,10 +89,8 @@ StripePayment has been successfully integrated into several e-commerce and servi
 
 ## Video
 
-   Uploading video_2024-03-17_07-23-01.mp4…
-
-
-
+https://github.com/A7medMajed16/checkout-payment/assets/86576698/4c95804e-72b5-4565-8e42-2777488769a6
+ 
 ---
 
 
